@@ -61,4 +61,4 @@
   - **Ananya Sharma** (Frontend & UI/UX Specialist)
   - **Rhea Verma** (Backend & Database Engineer)
   - **Priya Patel** (Product Strategy & Ethics Researcher)
-- **Links:** [GitHub Repository](https://github.com/mansisingh-iiitm/mansi-wellness) | [Live Demo](https://mansi-wellness.vercel.app)
+- **Links:** [GitHub Repository](https://github.com/mansii542/mansi-wellness) | [Live Demo](https://mansi-wellness.vercel.app)

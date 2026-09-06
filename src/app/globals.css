@@ -1,0 +1,86 @@
+/* src/app/globals.css - COMPLETE CODE (Final Reset and Custom Classes) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------------
+   1. COLOR PSYCHOLOGY VARIABLES (Ensures proper shades are available)
+   ------------------------------------------------------------------- */
+:root {
+  /* STATIC DEFAULT THEME: Calm/Sky Blue */
+  --color-primary-rgb: 34, 139, 230;     /* Sky Blue 600 */
+  --color-dark-rgb: 27, 111, 184;        /* Sky Blue 800 (Sidebar) */
+  --color-light-rgb: 173, 216, 230;      /* Light Sky Blue (Base Tint) */
+}
+
+/* MOOD OVERRIDES (Using corrected psychological colors) */
+.mood-joy {
+  --color-primary-rgb: 20, 184, 166;
+  --color-dark-rgb: 13, 117, 107;
+  --color-light-rgb: 102, 218, 207;
+}
+.mood-sad {
+  --color-primary-rgb: 103, 58, 183;
+  --color-dark-rgb: 82, 46, 146;
+  --color-light-rgb: 220, 210, 240; /* Very Light Lavender */
+}
+.mood-anger {
+  --color-primary-rgb: 233, 75, 120;
+  --color-dark-rgb: 186, 60, 96;
+  --color-light-rgb: 250, 180, 196;
+}
+.mood-anxious {
+  --color-primary-rgb: 34, 139, 230;
+  --color-dark-rgb: 27, 111, 184;
+  --color-light-rgb: 190, 220, 245; /* Light Sky Blue */
+}
+.mood-emergency {
+  --color-primary-rgb: 220, 38, 38;
+  --color-dark-rgb: 185, 28, 28;
+  --color-light-rgb: 254, 202, 202;
+}
+
+/* -------------------------------------------------------------------
+   2. GLOBAL CUSTOM CLASSES (Targeted styling to enforce look)
+   ------------------------------------------------------------------- */
+
+/* Full Page Background (CRITICAL FIX: Uses RGBA for guaranteed light gradient/tint) */
+.bg-page-dynamic {
+  background: linear-gradient(135deg, 
+              rgba(var(--color-light-rgb), 0.2), 
+              rgba(var(--color-light-rgb), 0.1)) !important; 
+  /* Added !important as a final safeguard */
+}
+
+/* Sidebar Background */
+.bg-sidebar-dynamic {
+  background-color: rgb(var(--color-dark-rgb));
+}
+
+/* Navbar Background (Slightly stronger tint for definition) */
+.bg-navbar-dynamic {
+  background-color: rgba(var(--color-light-rgb), 0.5); 
+}
+
+/* Inner Box/Chat Bubble/Button Color */
+.bg-primary-dynamic {
+  background-color: rgb(var(--color-primary-rgb));
+}
+
+.text-primary-dynamic {
+  color: rgb(var(--color-primary-rgb));
+}
+
+.hover\:bg-primary-dynamic:hover {
+  background-color: rgb(var(--color-dark-rgb));
+}
+
+/* Custom Utilities for Animation (from previous step) */
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fade-in-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes scale-in { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+
+.animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
+.animate-fade-in { animation: fade-in 0.5s ease-out forwards; }
+.animate-scale-in { animation: scale-in 0.5s ease-out forwards; opacity: 0; transform: scale(0.9); }

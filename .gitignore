@@ -1,0 +1,40 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+
+# Production build folder (if using custom build)
+/build
+
+# Local Environment Variables (Keep these secret!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# System Files (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# IDE / Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Vercel (if deploying there)
+.vercel
+
+# Optional: Ignore specific heavy assets if needed
+# /public/videos

@@ -66,7 +66,7 @@ Watch our 2.5-minute product walkthrough and live demonstration:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/mansisingh-iiitm/mansi-wellness.git
+git clone https://github.com/mansii542/mansi-wellness.git
 cd mansi-wellness
 ```
 

@@ -39,7 +39,7 @@
   *(Note: Complies with 100% female representation and university team guidelines).*
 
 - **Project Links:**
-  - **GitHub Repository:** `https://github.com/mansisingh-iiitm/mansi-wellness`
+  - **GitHub Repository:** `https://github.com/mansii542/mansi-wellness`
   - **Live Demo App:** `https://mansi-wellness.vercel.app`
   - **Demo Video (2–3 Mins):** `https://youtu.be/your-unlisted-video-id`
 
